@@ -1,6 +1,6 @@
 # Untuk-Cintaku-
 Andrea Nadine Thea Melinda💕💞💖
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -79,12 +79,14 @@ video{width:min(900px,95%);border-radius:20px;box-shadow:0 0 40px rgba(255,255,2
 <div class="polaroid" style="--r:-2" onclick="zoom('img3.jpg')"><img src="img3.jpg"><p>Beautiful Day</p></div>
 <div class="polaroid" style="--r:5" onclick="zoom('img4.jpg')"><img src="img4.jpg"><p>Sweet Memory</p></div>
 </div>
-<br><button style="max-width:300px" onclick="go('videoPage')">🎬 Video Kenangan</button>
+
+
+<br><button style="max-width:300px" onclick="go('https://github.com/user-attachments/assets/1eaa5d5d-b07a-4218-8f32-a701c9aaa7a7')">🎬 Video Kenangan</button>
 </div>
 
 <div class="page" id="videoPage">
 <h2>Video Kenangan Kita</h2><br>
-<video controls src="video.mp4"></video><br><br>
+<video controls src="https://github.com/user-attachments/assets/9bad4a27-9784-4ce2-a62c-0d2b77d33eb5"></video><br><br>
 <button style="max-width:300px" onclick="go('finalPage')">❤️ Halaman Terakhir</button>
 </div>
 
