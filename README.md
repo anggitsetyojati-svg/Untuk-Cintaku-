@@ -81,7 +81,7 @@ video{width:min(900px,95%);border-radius:20px;box-shadow:0 0 40px rgba(255,255,2
 </div>
 
 
-<br><button style="max-width:300px" onclick="go('https://github.com/user-attachments/assets/1eaa5d5d-b07a-4218-8f32-a701c9aaa7a7')">🎬 Video Kenangan</button>
+<br><button style="max-width:300px" onclick="go('videoPage')">🎬 Video Kenangan</button>
 </div>
 
 <div class="page" id="videoPage">
