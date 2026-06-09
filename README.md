@@ -357,23 +357,27 @@
     <div class="page" id="videoPage">
         <h2>Video Kenangan Kita</h2><br>
         <video controls src="https://github.com/user-attachments/assets/9bad4a27-9784-4ce2-a62c-0d2b77d33eb5"></video><br><br>
-        <button style="max-width:300px" onclick="go('finalPage')">❤️ satu lagi nihh..</button>
+        <button style="max-width:300px" onclick="go('finalPage')">❤️‍🔥 satu lagi nihh..</button>
     </div>
 
     <!-- Final Page -->
     <div class="page" id="finalPage">
         <div class="final">
-            <h1 class="glow">Andrea Nadine Thea Melinda ❤️</h1><br>
+            <h1 class="glow">Andrea Nadine Thea Melinda 🥰</h1><br>
             <p>
                 Happy birthday day yaa cintakuu..🥳🥳🎉🎊💕💖
-                Terima kasih sudah hadir dalam hidupku.
-                Terima kasih untuk setiap tawa, cerita, perhatian, dan semua kenangan yang telah kita lalui bersama.
+                aku tau aku ga sempurna, tapi aku selalu berusaha jadi seseorang yang bisa kamu andalkan. kalau ayang capek, butuh tempat cerita, atau cuma pengen didenger, aku selalu ada di sini. maaf kalau kadang aku nyebelin atau terlalu khawatir, semua itu karena aku benar-benar peduli. buat aku ayangg itu rumah, tempat dimana, hati ini selalu ingin pulang, apa pun yang terjadi aku mau kita selalu berjuang bareng, sampai semua baik-baik aja, 
+
+Terima kasih sudah hadir dalam hidupku.
+Terima kasih sudah menjadi tempat pulang untuk cerita, tawa, dan keluh kesahku.
+
+Semoga apa pun yang terjadi nanti, kita tetap bisa saling menjaga, saling memahami, dan terus menciptakan kenangan indah bersama.
                 I love you so muchh, and i'm thankful every day that you're mine cantikuu
             </p>
             <br>
-            <h2>I Love You sayangg❤️</h2>
+            <h2>I Love You sayangg💞</h2>
             <br>
-            <button style="max-width:320px" onclick="celebrateForever()">🌹 Forever With You</button>
+            <button style="max-width:320px" onclick="celebrateForever()">🌹 love youu..</button>
         </div>
     </div>
 
@@ -394,7 +398,7 @@
             const n = document.getElementById('nama').value.toLowerCase();
             const p = document.getElementById('pin').value;
             
-            if (n.includes('andrea') && p === '161223') {
+            if (n.includes('andrea') // (n.includes('nadine') // (n.includes('andrea nadine') && p === '161223') {
                 go('envelope');
             } else {
                 document.getElementById('msg').innerText = 'Nama atau PIN salah';
@@ -411,14 +415,40 @@ Aku membuat halaman kecil ini khusus untukmu.
 
 Mungkin ini hanya sebuah website sederhana, tetapi setiap bagian di dalamnya dibuat dengan penuh rasa sayang.
 
-aku sayang banget sama ayangg, mungkin lebih dari yang bisa aku ungkapin. aku ga akan ninggalin kamu, dalam keadaan apa pun.
+Untuk Ayangg, Andrea Nadine Thea Melinda 💖
 
-aku tau aku ga sempurna, tapi aku selalu berusaha jadi seseorang yang bisa kamu andalkan. kalau ayang capek, butuh tempat cerita, atau cuma pengen didenger, aku selalu ada di sini. maaf kalau kadang aku nyebelin atau terlalu khawatir, semua itu karena aku benar-benar peduli. buat aku ayangg itu rumah, tempat dimana, hati ini selalu ingin pulang, apa pun yang terjadi aku mau kita selalu berjuang bareng, sampai semua baik-baik aja, 
+Selamat ulang tahun yang ke-20, Ayangg.
 
-Terima kasih sudah hadir dalam hidupku.
-Terima kasih sudah menjadi tempat pulang untuk cerita, tawa, dan keluh kesahku.
+Hari ini adalah hari yang sangat spesial karena hari ini adalah hari lahir seseorang putri kecil yang begitu berarti dalam hidupku. Seseorang yang selama dua tahun terakhir telah mengisi hari-hariku dengan kebahagiaan yang luar biasa. Seseorang yang selalu membuatku tersenyum bahkan di saat-saat yang paling sulit sekalipun.
 
-Semoga apa pun yang terjadi nanti, kita tetap bisa saling menjaga, saling memahami, dan terus menciptakan kenangan indah bersama.`;
+Di hari ulang tahunmu ini, aku ingin mengucapkan terima kasih untuk semua hal yang sudah kamu berikan kepadaku. Terima kasih karena telah hadir dalam hidupku. Terima kasih karena telah menjadi tempat berlindung dan tempat terbaik bagi hati ini.
+
+Aku bersyukur kepada Tuhan karena telah mempertemukanku denganmu. Dari sekian banyak orang di dunia ini, aku merasa beruntung karena bisa mengenalmu, mencintaimu, dan berjalan bersamamu hingga saat ini. Dua tahun ini terasa seperti mimpi yang indah dan aku ingin terus bermimpi bersama ayang.
+
+Ayangg, aku berharap di usia yang baru ini kamu selalu diberikan kesehatan, kebahagiaan, kekuatan, dan keberhasilan dalam setiap langkah yang kamu ambil. Semoga semua impian, harapan, dan cita-cita kamu menjadi kenyataan.
+
+Aku juga ingin kamu tahu bahwa kehadiranmu sangat berarti bagiku. Senyummu, perhatianmu, cara kamu peduli, dan semua hal kecil yang kamu lakukan sering kali menjadi sesuatu yang membuat hariku lebih berwarna dan penuh makna.
+
+Terima kasih karena sudah hadir dalam hidupku selama dua tahun terakhir. Aku bersyukur karena dari sekian banyak kemungkinan di dunia ini, aku dipertemukan dengan seseorang sebaik dan seistimewa dirimu.
+
+Terima kasih karena sudah bertahan bersamaku selama ini. Terima kasih karena sudah menerima segala kekuranganku. Terima kasih karena tetap memilih untuk berjalan bersamaku hingga hari ini.
+
+Dan yang paling penting, terima kasih karena sudah menjadi Andrea Nadine yang aku kenal dan aku sayangi.
+
+Di hari spesialmu ini, aku tidak meminta banyak hal selain melihatmu bahagia. Karena kebahagiaanmu juga menjadi kebahagiaanku.
+
+Sekali lagi, selamat ulang tahun yang ke-20, Ayangg.
+
+Semoga tahun ini menjadi tahun yang penuh kebahagiaan, keberuntungan, dan cerita indah untukmu.
+
+Aku sayang kamu, hari ini, besok, dan selama Tuhan masih mengizinkan aku untuk mencintaimu. 💕
+
+Dengan penuh cinta,
+
+Anggut 🤍
+
+Selamat ulang tahun yang ke-20, Cantikuu🎊🎉🥳🥰💞💖.
+`;
             
             let i = 0;
             const el = document.getElementById('typing');
