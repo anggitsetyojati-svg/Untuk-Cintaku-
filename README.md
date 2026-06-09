@@ -14,7 +14,7 @@
         }
 
         body {
-            background: linear-gradient(180deg, #08050d, #130818, #220b1f);
+            background: gradient(180deg, #08050d, #130818, #220b1f);
             color: #fff;
             overflow: hidden;
         }
@@ -306,7 +306,7 @@
     <!-- Intro Page -->
     <div class="page active" id="intro">
         <h1 class="glow">Andrea Nadine ❤️</h1>
-        <p style="margin:20px 0">A special gift has been prepared for you</p>
+        <p style="margin:20px 0">Haii manisskuu,login dulu yaa sandinya tau kann..</p>
         <button style="max-width:300px" onclick="go('login')">🎁 Buka Hadiah</button>
     </div>
 
@@ -314,9 +314,9 @@
     <div class="page" id="login">
         <div class="card">
             <h2>Login Gift</h2>
-            <input id="nama" placeholder="Nama">
-            <input id="pin" type="password" placeholder="PIN">
-            <button onclick="login()">Masuk</button>
+            <input id="nama kamu" placeholder="Nama">
+            <input id="sandi" type="password" placeholder="PIN">
+            <button onclick="login()">Login</button>
             <p id="msg"></p>
         </div>
     </div>
@@ -324,26 +324,31 @@
     <!-- Envelope Page -->
     <div class="page" id="envelope">
         <div class="envelope" onclick="openLetter()">💌</div>
-        <p>Klik amplop untuk membuka surat</p>
+        <p>Coba pencet amplopnya, ada surat sedikit dibaca yaa..</p>
     </div>
 
     <!-- Letter Page -->
     <div class="page" id="letter">
         <div class="card">
-            <h2>Untuk Ayang ❤️</h2>
+            <h2>Untuk Cintakuu 🤍</h2>
             <p id="typing"></p>
-            <button onclick="go('galleryPage')">Lanjutkan</button>
+            <button onclick="go('galleryPage')">Next</button>
         </div>
     </div>
 
     <!-- Gallery Page -->
     <div class="page" id="galleryPage">
-        <h2 style="margin-bottom:20px">📸 Our Memories</h2>
+        <h2 style="margin-bottom:20px">📸
+        Klik</h2>
         <div class="gallery">
-            <div class="polaroid" style="--r:-4" onclick="zoom('img1.jpg')"><img src="img1.jpg"><p>My Favorite Smile</p></div>
-            <div class="polaroid" style="--r:3" onclick="zoom('img2.jpg')"><img src="img2.jpg"><p>Our Story</p></div>
-            <div class="polaroid" style="--r:-2" onclick="zoom('img3.jpg')"><img src="img3.jpg"><p>Beautiful Day</p></div>
-            <div class="polaroid" style="--r:5" onclick="zoom('img4.jpg')"><img src="img4.jpg"><p>Sweet Memory</p></div>
+            <div class="polaroid" style="--r:-4" onclick="zoom('img1.jpg')"><img src="<img width="3072" height="4080" alt="1000345766" src="https://github.com/user-attachments/assets/9fe61275-7a7c-4118-977f-74c9639bb019" />
+"><p>My Princess</p></div>
+            <div class="polaroid" style="--r:3" onclick="zoom('img2.jpg')"><img src="<img width="2464" height="3280" alt="1000345774" src="https://github.com/user-attachments/assets/14f33268-1e8a-4408-80fb-bc52d59411cb" />
+"><p>Our Story</p></div>
+            <div class="polaroid" style="--r:-2" onclick="zoom('img3.jpg')"><img src="<img width="900" height="1600" alt="1000486468" src="https://github.com/user-attachments/assets/7be50d7e-1231-4794-9de6-76724d9bbbbb" />
+"><p>My Beautiful</p></div>
+            <div class="polaroid" style="--r:5" onclick="zoom('img4.jpg')"><img src="<img width="3072" height="4080" alt="1000345790" src="https://github.com/user-attachments/assets/43c7c3f2-7b10-493c-99e6-674f57add227" />
+"><p>Sweet Memory</p></div>
         </div>
         <br><button style="max-width:300px" onclick="go('videoPage')">🎬 Video Kenangan</button>
     </div>
@@ -352,7 +357,7 @@
     <div class="page" id="videoPage">
         <h2>Video Kenangan Kita</h2><br>
         <video controls src="https://github.com/user-attachments/assets/9bad4a27-9784-4ce2-a62c-0d2b77d33eb5"></video><br><br>
-        <button style="max-width:300px" onclick="go('finalPage')">❤️ Halaman Terakhir</button>
+        <button style="max-width:300px" onclick="go('finalPage')">❤️ satu lagi nihh..</button>
     </div>
 
     <!-- Final Page -->
@@ -360,12 +365,13 @@
         <div class="final">
             <h1 class="glow">Andrea Nadine Thea Melinda ❤️</h1><br>
             <p>
+                Happy birthday day yaa cintakuu..🥳🥳🎉🎊💕💖
                 Terima kasih sudah hadir dalam hidupku.
                 Terima kasih untuk setiap tawa, cerita, perhatian, dan semua kenangan yang telah kita lalui bersama.
-                Mungkin aku tidak selalu sempurna, tetapi aku akan selalu berusaha menjadi seseorang yang bisa membuatmu merasa dicintai, dihargai, dan ditemani.
+                I love you so muchh, and i'm thankful every day that you're mine cantikuu
             </p>
             <br>
-            <h2>I Love You ❤️</h2>
+            <h2>I Love You sayangg❤️</h2>
             <br>
             <button style="max-width:320px" onclick="celebrateForever()">🌹 Forever With You</button>
         </div>
@@ -404,6 +410,10 @@
 Aku membuat halaman kecil ini khusus untukmu.
 
 Mungkin ini hanya sebuah website sederhana, tetapi setiap bagian di dalamnya dibuat dengan penuh rasa sayang.
+
+aku sayang banget sama ayangg, mungkin lebih dari yang bisa aku ungkapin. aku ga akan ninggalin kamu, dalam keadaan apa pun.
+
+aku tau aku ga sempurna, tapi aku selalu berusaha jadi seseorang yang bisa kamu andalkan. kalau ayang capek, butuh tempat cerita, atau cuma pengen didenger, aku selalu ada di sini. maaf kalau kadang aku nyebelin atau terlalu khawatir, semua itu karena aku benar-benar peduli. buat aku ayangg itu rumah, tempat dimana, hati ini selalu ingin pulang, apa pun yang terjadi aku mau kita selalu berjuang bareng, sampai semua baik-baik aja, 
 
 Terima kasih sudah hadir dalam hidupku.
 Terima kasih sudah menjadi tempat pulang untuk cerita, tawa, dan keluh kesahku.
