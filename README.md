@@ -108,6 +108,31 @@
             }
         }
 
+        /* Fireworks Animation */
+        .firework {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .firework-particle {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            animation: explode linear forwards;
+        }
+
+        @keyframes explode {
+            from {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: translate(var(--tx), var(--ty)) scale(0);
+                opacity: 0;
+            }
+        }
+
         .glow {
             animation: pulse 2.5s infinite;
         }
@@ -275,7 +300,7 @@
             <br>
             <h2>I Love You ❤️</h2>
             <br>
-            <button style="max-width:320px" onclick="heartStorm()">🌹 Forever With You</button>
+            <button style="max-width:320px" onclick="celebrateForever()">🌹 Forever With You</button>
         </div>
     </div>
 
@@ -352,10 +377,64 @@ Semoga apa pun yang terjadi nanti, kita tetap bisa saling menjaga, saling memaha
         // Create Hearts Continuously
         setInterval(createHeart, 350);
 
-        // Heart Storm Effect
-        function heartStorm() {
-            for (let i = 0; i < 80; i++) {
-                setTimeout(createHeart, i * 40);
+        // Create Firework Particle
+        function createFireworkParticle(x, y, color) {
+            const particle = document.createElement('div');
+            particle.className = 'firework-particle';
+            particle.style.left = x + 'px';
+            particle.style.top = y + 'px';
+            particle.style.backgroundColor = color;
+            
+            const angle = Math.random() * Math.PI * 2;
+            const distance = 50 + Math.random() * 150;
+            const tx = Math.cos(angle) * distance;
+            const ty = Math.sin(angle) * distance;
+            
+            particle.style.setProperty('--tx', tx + 'px');
+            particle.style.setProperty('--ty', ty + 'px');
+            
+            const duration = 0.5 + Math.random() * 1.5;
+            particle.style.animationDuration = duration + 's';
+            
+            document.getElementById('hearts').appendChild(particle);
+            
+            setTimeout(() => particle.remove(), duration * 1000);
+        }
+
+        // Create Fireworks Burst
+        function createFireworkBurst(x, y) {
+            const colors = ['#ff4f9f', '#ff89c7', '#ffb3d9', '#ff1493', '#ff69b4'];
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                setTimeout(() => {
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    createFireworkParticle(x, y, color);
+                }, i * 15);
+            }
+        }
+
+        // Celebrate Forever - Hearts + Fireworks
+        function celebrateForever() {
+            // Create multiple fireworks from different positions
+            const positions = [
+                { x: window.innerWidth * 0.2, y: window.innerHeight * 0.3 },
+                { x: window.innerWidth * 0.5, y: window.innerHeight * 0.2 },
+                { x: window.innerWidth * 0.8, y: window.innerHeight * 0.3 },
+                { x: window.innerWidth * 0.3, y: window.innerHeight * 0.5 },
+                { x: window.innerWidth * 0.7, y: window.innerHeight * 0.5 }
+            ];
+
+            // Launch fireworks in sequence
+            positions.forEach((pos, index) => {
+                setTimeout(() => {
+                    createFireworkBurst(pos.x, pos.y);
+                }, index * 200);
+            });
+
+            // Launch heart storm
+            for (let i = 0; i < 120; i++) {
+                setTimeout(createHeart, i * 30);
             }
         }
     </script>
