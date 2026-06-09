@@ -14,7 +14,7 @@
         }
 
         body {
-            background: grey-gradient(180deg, #08050d, #130818, #220b1f);
+            background: linear-gradient(180deg, #08050d, #130818, #220b1f);
             color: #fff;
             overflow: hidden;
         }
@@ -314,8 +314,8 @@
     <div class="page" id="login">
         <div class="card">
             <h2>Login Gift</h2>
-            <input id="nama kamu" placeholder="Nama">
-            <input id="sandi" type="password" placeholder="PIN">
+            <input id="nama" placeholder="Nama">
+            <input id="pin" type="password" placeholder="PIN">
             <button onclick="login()">Login</button>
             <p id="msg"></p>
         </div>
