@@ -398,10 +398,10 @@ Semoga apa pun yang terjadi nanti, kita tetap bisa saling menjaga, saling memaha
             const n = document.getElementById('nama').value.toLowerCase();
             const p = document.getElementById('pin').value;
             
-            if (n.includes('andrea') // (n.includes('nadine') // (n.includes('andrea nadine') && p === '161223') {
+            if (n.includes('andrea') // (n.includes('nadine')) && p === '161223') {
                 go('envelope');
             } else {
-                document.getElementById('msg').innerText = 'Nama atau PIN salah';
+                document.getElementById('msg').innerText = 'Nama anda atau PIN salah';
             }
         }
 
