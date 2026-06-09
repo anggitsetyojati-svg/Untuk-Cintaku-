@@ -306,8 +306,8 @@
     <!-- Intro Page -->
     <div class="page active" id="intro">
         <h1 class="glow">Andrea Nadine ❤️</h1>
-        <p style="margin:20px 0">Haii manisskuu,login dulu yaa sandinya tau kann..</p>
-        <button style="max-width:300px" onclick="go('login')">🎁 Buka Hadiah</button>
+        <p style="margin:20px 0">Haii Manisskuu,Login Dulu yaa Sandinya tau kann..🤭</p>
+        <button style="max-width:300px" onclick="go('login')">MASUK</button>
     </div>
 
     <!-- Login Page -->
