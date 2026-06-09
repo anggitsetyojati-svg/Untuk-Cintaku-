@@ -14,7 +14,7 @@
         }
 
         body {
-            background: gradient(180deg, #08050d, #130818, #220b1f);
+            background: grey-gradient(180deg, #08050d, #130818, #220b1f);
             color: #fff;
             overflow: hidden;
         }
