@@ -28,6 +28,7 @@
             flex-direction: column;
             padding: 20px;
             text-align: center;
+            overflow-y: auto;
         }
 
         .active {
@@ -91,6 +92,7 @@
             position: fixed;
             inset: 0;
             pointer-events: none;
+            z-index: 1;
         }
 
         .heart {
@@ -157,14 +159,17 @@
         #typing {
             line-height: 1.9;
             white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
         }
 
         /* Gallery */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             gap: 16px;
-            max-width: 850px;
+            max-width: 100%;
+            width: 100%;
         }
 
         .polaroid {
@@ -175,6 +180,9 @@
             transform: rotate(calc(var(--r) * 1deg));
             cursor: pointer;
             transition: transform 0.3s ease;
+            max-width: 300px;
+            margin: 0 auto;
+            width: 100%;
         }
 
         .polaroid:hover {
@@ -183,13 +191,14 @@
 
         .polaroid img {
             width: 100%;
-            height: 250px;
+            height: 200px;
             object-fit: cover;
         }
 
         .polaroid p {
             padding: 8px;
             font-weight: 600;
+            font-size: 14px;
         }
 
         /* Modal */
@@ -200,6 +209,7 @@
             display: none;
             justify-content: center;
             align-items: center;
+            z-index: 100;
         }
 
         .modal img {
@@ -211,6 +221,7 @@
         /* Video */
         video {
             width: min(900px, 95%);
+            max-height: 50vh;
             border-radius: 20px;
             box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
         }
@@ -219,16 +230,72 @@
         .final {
             max-width: 800px;
             line-height: 2;
+            width: 100%;
+        }
+
+        .final p {
+            font-size: clamp(14px, 2.5vw, 16px);
+            margin: 10px 0;
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
+        @media (min-width: 768px) {
             .gallery {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 850px;
             }
             
+            .polaroid {
+                max-width: 100%;
+            }
+
+            .polaroid img {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page {
+                padding: 10px;
+            }
+
             .card {
+                padding: 20px;
                 width: 95%;
+            }
+
+            h1 {
+                font-size: clamp(1.5rem, 4vw, 2.5rem);
+            }
+
+            h2 {
+                font-size: clamp(1rem, 3vw, 1.8rem);
+            }
+
+            .polaroid img {
+                height: 150px;
+            }
+
+            .polaroid p {
+                font-size: 12px;
+                padding: 6px;
+            }
+
+            video {
+                max-height: 40vh;
+            }
+
+            #typing {
+                max-height: 250px;
+                font-size: 14px;
+            }
+
+            .final {
+                line-height: 1.6;
+            }
+
+            .final p {
+                font-size: 13px;
             }
         }
     </style>
@@ -384,6 +451,7 @@ Semoga apa pun yang terjadi nanti, kita tetap bisa saling menjaga, saling memaha
             particle.style.left = x + 'px';
             particle.style.top = y + 'px';
             particle.style.backgroundColor = color;
+            particle.style.zIndex = 50;
             
             const angle = Math.random() * Math.PI * 2;
             const distance = 50 + Math.random() * 150;
