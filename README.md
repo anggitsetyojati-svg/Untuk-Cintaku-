@@ -47,7 +47,7 @@
      letter .card {
      width: min(95%, 700px);
      margin-top: 200px;
-     max-height: auto;
+     max-height: 500px;
      padding: 40px;
      display: flex;
      flex-direction: column;
@@ -224,7 +224,7 @@
             cursor: pointer;
             transition: transform 0.3s ease;
             max-width: 300px;
-            margin-top: 300px;
+            margin-top: 16px;
             width: 100%;
             overflow-y: auto;
         }
