@@ -1,4 +1,3 @@
-
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -338,17 +337,12 @@
 
     <!-- Gallery Page -->
     <div class="page" id="galleryPage">
-        <h2 style="margin-bottom:20px">📸
-        Klik</h2>
+        <h2 style="margin-bottom:20px">📸 Klik</h2>
         <div class="gallery">
-            <div class="polaroid" style="--r:-4" onclick="zoom('img1.jpg')"><img src="<img width="3072" height="4080" alt="1000345766" src="https://github.com/user-attachments/assets/9fe61275-7a7c-4118-977f-74c9639bb019" />
-"><p>My Princess</p></div>
-            <div class="polaroid" style="--r:3" onclick="zoom('img2.jpg')"><img src="<img width="2464" height="3280" alt="1000345774" src="https://github.com/user-attachments/assets/14f33268-1e8a-4408-80fb-bc52d59411cb" />
-"><p>Our Story</p></div>
-            <div class="polaroid" style="--r:-2" onclick="zoom('img3.jpg')"><img src="<img width="900" height="1600" alt="1000486468" src="https://github.com/user-attachments/assets/7be50d7e-1231-4794-9de6-76724d9bbbbb" />
-"><p>My Beautiful</p></div>
-            <div class="polaroid" style="--r:5" onclick="zoom('img4.jpg')"><img src="<img width="3072" height="4080" alt="1000345790" src="https://github.com/user-attachments/assets/43c7c3f2-7b10-493c-99e6-674f57add227" />
-"><p>Sweet Memory</p></div>
+            <div class="polaroid" style="--r:-4" onclick="zoom('img1.jpg')"><img src="https://github.com/user-attachments/assets/9fe61275-7a7c-411e-aac9-a3c4e066c22a"><p>My Princess</p></div>
+            <div class="polaroid" style="--r:3" onclick="zoom('img2.jpg')"><img src="https://github.com/user-attachments/assets/14f33268-1e8a-4408-b889-6f9d47c55f22"><p>Our Story</p></div>
+            <div class="polaroid" style="--r:-2" onclick="zoom('img3.jpg')"><img src="https://github.com/user-attachments/assets/7be50d7e-1231-4794-89df-8cfe95c96faa"><p>My Beautiful</p></div>
+            <div class="polaroid" style="--r:5" onclick="zoom('img4.jpg')"><img src="https://github.com/user-attachments/assets/43c7c3f2-7b10-493c-a73f-9f7ffa5ecec4"><p>Sweet Memory</p></div>
         </div>
         <br><button style="max-width:300px" onclick="go('videoPage')">🎬 Video Kenangan</button>
     </div>
@@ -366,7 +360,7 @@
             <h1 class="glow">Andrea Nadine Thea Melinda 🥰</h1><br>
             <p>
                 Happy birthday day yaa cintakuu..🥳🥳🎉🎊💕💖
-                aku tau aku ga sempurna, tapi aku selalu berusaha jadi seseorang yang bisa kamu andalkan. kalau ayang capek, butuh tempat cerita, atau cuma pengen didenger, aku selalu ada di sini. maaf kalau kadang aku nyebelin atau terlalu khawatir, semua itu karena aku benar-benar peduli. buat aku ayangg itu rumah, tempat dimana, hati ini selalu ingin pulang, apa pun yang terjadi aku mau kita selalu berjuang bareng, sampai semua baik-baik aja, 
+                aku tau aku ga sempurna, tapi aku selalu berusaha jadi seseorang yang bisa kamu andalkan. kalau ayang capek, butuh tempat cerita, atau cuma pengen didenger, aku selalu ada di sini. maa[...]
 
 Terima kasih sudah hadir dalam hidupku.
 Terima kasih sudah menjadi tempat pulang untuk cerita, tawa, dan keluh kesahku.
@@ -398,7 +392,7 @@ Semoga apa pun yang terjadi nanti, kita tetap bisa saling menjaga, saling memaha
             const n = document.getElementById('nama').value.toLowerCase();
             const p = document.getElementById('pin').value;
             
-            if (n.includes('andrea') // (n.includes('nadine')) && p === '161223') {
+            if ((n.includes('andrea') || n.includes('nadine')) && p === '161223') {
                 go('envelope');
             } else {
                 document.getElementById('msg').innerText = 'Nama anda atau PIN salah';
@@ -419,17 +413,17 @@ Untuk Ayangg, Andrea Nadine Thea Melinda 💖
 
 Selamat ulang tahun yang ke-20, Ayangg.
 
-Hari ini adalah hari yang sangat spesial karena hari ini adalah hari lahir seseorang putri kecil yang begitu berarti dalam hidupku. Seseorang yang selama dua tahun terakhir telah mengisi hari-hariku dengan kebahagiaan yang luar biasa. Seseorang yang selalu membuatku tersenyum bahkan di saat-saat yang paling sulit sekalipun.
+Hari ini adalah hari yang sangat spesial karena hari ini adalah hari lahir seseorang putri kecil yang begitu berarti dalam hidupku. Seseorang yang selama dua tahun terakhir telah mengisi hari-hariku d[...]
 
-Di hari ulang tahunmu ini, aku ingin mengucapkan terima kasih untuk semua hal yang sudah kamu berikan kepadaku. Terima kasih karena telah hadir dalam hidupku. Terima kasih karena telah menjadi tempat berlindung dan tempat terbaik bagi hati ini.
+Di hari ulang tahunmu ini, aku ingin mengucapkan terima kasih untuk semua hal yang sudah kamu berikan kepadaku. Terima kasih karena telah hadir dalam hidupku. Terima kasih karena telah menjadi te[...]
 
-Aku bersyukur kepada Tuhan karena telah mempertemukanku denganmu. Dari sekian banyak orang di dunia ini, aku merasa beruntung karena bisa mengenalmu, mencintaimu, dan berjalan bersamamu hingga saat ini. Dua tahun ini terasa seperti mimpi yang indah dan aku ingin terus bermimpi bersama ayang.
+Aku bersyukur kepada Tuhan karena telah mempertemukanku denganmu. Dari sekian banyak orang di dunia ini, aku merasa beruntung karena bisa mengenalmu, mencintaimu, dan berjalan bersamamu hingga sa[...]
 
-Ayangg, aku berharap di usia yang baru ini kamu selalu diberikan kesehatan, kebahagiaan, kekuatan, dan keberhasilan dalam setiap langkah yang kamu ambil. Semoga semua impian, harapan, dan cita-cita kamu menjadi kenyataan.
+Ayangg, aku berharap di usia yang baru ini kamu selalu diberikan kesehatan, kebahagiaan, kekuatan, dan keberhasilan dalam setiap langkah yang kamu ambil. Semoga semua impian, harapan, dan cita-ci[...]
 
-Aku juga ingin kamu tahu bahwa kehadiranmu sangat berarti bagiku. Senyummu, perhatianmu, cara kamu peduli, dan semua hal kecil yang kamu lakukan sering kali menjadi sesuatu yang membuat hariku lebih berwarna dan penuh makna.
+Aku juga ingin kamu tahu bahwa kehadiranmu sangat berarti bagiku. Senyummu, perhatianmu, cara kamu peduli, dan semua hal kecil yang kamu lakukan sering kali menjadi sesuatu yang membuat hariku le[...]
 
-Terima kasih karena sudah hadir dalam hidupku selama dua tahun terakhir. Aku bersyukur karena dari sekian banyak kemungkinan di dunia ini, aku dipertemukan dengan seseorang sebaik dan seistimewa dirimu.
+Terima kasih karena sudah hadir dalam hidupku selama dua tahun terakhir. Aku bersyukur karena dari sekian banyak kemungkinan di dunia ini, aku dipertemukan dengan seseorang sebaik dan seistimewa [...]
 
 Terima kasih karena sudah bertahan bersamaku selama ini. Terima kasih karena sudah menerima segala kekuranganku. Terima kasih karena tetap memilih untuk berjalan bersamaku hingga hari ini.
 
