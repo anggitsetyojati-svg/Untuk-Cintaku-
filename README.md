@@ -26,6 +26,7 @@
             align-items: center;
             flex-direction: column;
             padding: 20px;
+            padding-top: 40px;
             text-align: center;
             overflow-y: auto;
         }
@@ -46,7 +47,7 @@
      /* Letter Card - Lebih Besar */
      letter .card {
      width: min(95%, 700px);
-     margin-top: 200px;
+     margin-top: 40px;
      max-height: 500px;
      padding: 40px;
      display: flex;
@@ -374,6 +375,7 @@
     <!-- Envelope Page -->
     <div class="page" id="envelope">
         <div class="envelope" onclick="openLetter()">💌</div>
+        
         <p>Coba pencet amplopnya, ada surat sedikit dibaca yaa..</p>
     </div>
 
@@ -390,10 +392,10 @@
     <div class="page" id="galleryPage">
         <h2 style="margin-bottom:20px">📸 Klik</h2>
         <div class="gallery">
-            <div class="polaroid" style="--r:-4" onclick="zoom('img1.jpg')"><img src="https://github.com/user-attachments/assets/9fe61275-7a7c-411e-aac9-a3c4e066c22a"><p>My Princess</p></div>
-            <div class="polaroid" style="--r:3" onclick="zoom('img2.jpg')"><img src="https://github.com/user-attachments/assets/14f33268-1e8a-4408-b889-6f9d47c55f22"><p>Our Story</p></div>
-            <div class="polaroid" style="--r:-2" onclick="zoom('img3.jpg')"><img src="https://github.com/user-attachments/assets/7be50d7e-1231-4794-89df-8cfe95c96faa"><p>My Beautiful</p></div>
-            <div class="polaroid" style="--r:5" onclick="zoom('img4.jpg')"><img src="https://github.com/user-attachments/assets/43c7c3f2-7b10-493c-a73f-9f7ffa5ecec4"><p>Sweet Memory</p></div>
+            <div class="polaroid" style="--r:-4" onclick="zoom('img1.jpg')"><img src="<img width="900" height="1600" alt="1000486470" src="https://github.com/user-attachments/assets/53115578-52fe-436e-b239-c87c38445181"><p>My Princess</p></div>
+            <div class="polaroid" style="--r:3" onclick="zoom('img2.jpg')"><img src="<img width="2464" height="3280" alt="1000345774" src="https://github.com/user-attachments/assets/f192e533-5cf9-44b0-8fd7-da8c95395d0d"><p>Our Story</p></div>
+            <div class="polaroid" style="--r:-2" onclick="zoom('img3.jpg')"><img src="<img width="3072" height="4080" alt="1000216990" src="https://github.com/user-attachments/assets/b4066981-6ec4-4372-94b6-6848dcf6fa71"><p>My Beautiful</p></div>
+            <div class="polaroid" style="--r:5" onclick="zoom('img4.jpg')"><img src="<img width="3072" height="4080" alt="1000345798" src="https://github.com/user-attachments/assets/c6ba5a7c-99c9-46a3-bd01-dfe90b170e08"><p>Sweet Memory</p></div>
         </div>
         <br><button style="max-width:300px" onclick="go('videoPage')">🎬 Video Kenangan</button>
     </div>
@@ -411,12 +413,11 @@
             <h1 class="glow">Andrea Nadine Thea Melinda 🥰</h1><br>
             <p>
                 Happy birthday day yaa cintakuu..🥳🥳🎉🎊💕💖
-                aku tau aku ga sempurna, tapi aku selalu berusaha jadi seseorang yang bisa kamu andalkan. kalau ayang capek, butuh tempat cerita, atau cuma pengen didenger, aku selalu ada di sini. maa[...]
+    Aku tau aku ga sempurna, tapi aku selalu berusaha jadi seseorang yang bisa kamu andalkan. kalau ayang capek, butuh tempat cerita, atau cuma pengen didenger, aku selalu ada di sini.
+    
+    Terima kasih sudah hadir dalam hidupku. Terima kasih sudah menjadi tempat pulang untuk cerita, tawa, dan keluh kesahku.
+    Semoga apa pun yang terjadi nanti, kita tetap bisa saling menjaga, saling memahami, dan terus menciptakan kenangan indah bersama.
 
-Terima kasih sudah hadir dalam hidupku.
-Terima kasih sudah menjadi tempat pulang untuk cerita, tawa, dan keluh kesahku.
-
-Semoga apa pun yang terjadi nanti, kita tetap bisa saling menjaga, saling memahami, dan terus menciptakan kenangan indah bersama.
                 I love you so muchh, and i'm thankful every day that you're mine cantikuu
             </p>
             <br>
@@ -446,7 +447,7 @@ Semoga apa pun yang terjadi nanti, kita tetap bisa saling menjaga, saling memaha
             if ((n.includes('andrea') || n.includes('nadine')) && p === '161223') {
                 go('envelope');
             } else {
-                document.getElementById('msg').innerText = 'Nama anda atau PIN salah';
+                document.getElementById('msg').innerText = 'Nama anda atau Pin salah';
             }
         }
 
@@ -454,11 +455,7 @@ Semoga apa pun yang terjadi nanti, kita tetap bisa saling menjaga, saling memaha
         function openLetter() {
             go('letter');
             
-            const txt = `Hai Ayang ❤️
-
-Aku membuat halaman kecil ini khusus untukmu.
-
-Mungkin ini hanya sebuah website sederhana, tetapi setiap bagian di dalamnya dibuat dengan penuh rasa sayang.
+            const txt = `Haii Cintaa💕
 
 Untuk Ayangg, Andrea Nadine Thea Melinda 💖
 
@@ -482,7 +479,7 @@ Dan yang paling penting, terima kasih karena sudah menjadi Andrea Nadine yang ak
 
 Di hari spesialmu ini, aku tidak meminta banyak hal selain melihatmu bahagia. Karena kebahagiaanmu juga menjadi kebahagiaanku.
 
-Sekali lagi, selamat ulang tahun yang ke-20, Ayangg.
+Sekali lagi, selamat ulang tahun yang ke-20, sayangg🥳🎉.
 
 Semoga tahun ini menjadi tahun yang penuh kebahagiaan, keberuntungan, dan cerita indah untukmu.
 
@@ -492,7 +489,8 @@ Dengan penuh cinta,
 
 Anggut 🤍
 
-Selamat ulang tahun yang ke-20, Cantikuu🎊🎉🥳🥰💞💖.`;
+Selamat ulang tahun yang ke-20, Cantikuu🎊🎉🥳🥰💞💖.
+"eh engga deng yang ke-19🤭🤣"`;
             
             let i = 0;
             const el = document.getElementById('typing');
