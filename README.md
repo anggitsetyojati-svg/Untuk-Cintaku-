@@ -46,11 +46,12 @@
      /* Letter Card - Lebih Besar */
      letter .card {
      width: min(95%, 700px);
+     margin-top: 200px;
      max-height: auto;
      padding: 40px;
      display: flex;
      flex-direction: column;
-     overflow-y: auto center;
+     overflow-y: auto;
      }
 
         h1 {
@@ -157,7 +158,7 @@
         .envelope {
             font-size: 140px;
             cursor: pointer;
-            transition: 0.5s;
+            transition: 0.4s;
         }
 
         .envelope:hover {
@@ -223,7 +224,7 @@
             cursor: pointer;
             transition: transform 0.3s ease;
             max-width: 300px;
-            margin: 0 auto;
+            margin-top: 300px;
             width: 100%;
             overflow-y: auto;
         }
