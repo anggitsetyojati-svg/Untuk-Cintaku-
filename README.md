@@ -42,20 +42,16 @@
             border-radius: 28px;
             width: min(92%, 560px);
             box-shadow: 0 0 40px rgba(255, 105, 180, 0.25);
-      }
-        /*letter-card {
-    width: min(95%, 700px);
-    max-height: 80vh;
-    padding: 35px 25px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    }
-    text-container {
-    overflow-y: auto;
-    margin-bottom: 20px;
-    padding-right: 5px;
-    }
+     }
+     /* Letter Card - Lebih Besar */
+     letter .card {
+     width: min(95%, 700px);
+     max-height: 80vh;
+     padding: 40px;
+     display: flex;
+     flex-direction: column;
+     overflow-y: auto;
+     }
 
         h1 {
             font-size: clamp(2rem, 5vw, 3.5rem);
@@ -75,7 +71,7 @@
 
         button {
             background: linear-gradient(45deg, #ff4f9f, #ff89c7);
-            color: white;
+            color: pink;
             font-weight: 700;
             cursor: pointer;
             transition: transform 0.3s ease;
@@ -91,7 +87,7 @@
 
         input {
             background: rgba(255, 255, 255, 0.1);
-            color: white;
+            color: pink;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
