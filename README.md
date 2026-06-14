@@ -44,6 +44,16 @@
             box-shadow: 0 0 40px rgba(255, 105, 180, 0.25);
         }
 
+        /* Letter Card - Lebih Besar */
+        #letter .card {
+            width: min(95%, 700px);
+            max-height: 80vh;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
         h1 {
             font-size: clamp(2rem, 5vw, 3.5rem);
         }
@@ -158,8 +168,41 @@
         #typing {
             line-height: 1.9;
             white-space: pre-wrap;
-            max-height: 300px;
-            overflow-y: auto;
+            word-wrap: break-word;
+            text-align: left;
+            font-size: clamp(13px, 2vw, 15px);
+            flex-grow: 1;
+            padding: 10px 0;
+            min-height: 100px;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Cursor Blink */
+        .typing-cursor {
+            display: inline-block;
+            width: 2px;
+            height: 1em;
+            background-color: #ff75b5;
+            margin-left: 2px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 49% {
+                opacity: 1;
+            }
+            50%, 100% {
+                opacity: 0;
+            }
         }
 
         /* Gallery */
@@ -263,6 +306,12 @@
                 width: 95%;
             }
 
+            #letter .card {
+                width: 95%;
+                padding: 20px;
+                max-height: 85vh;
+            }
+
             h1 {
                 font-size: clamp(1.5rem, 4vw, 2.5rem);
             }
@@ -286,7 +335,7 @@
 
             #typing {
                 max-height: 250px;
-                font-size: 14px;
+                font-size: 13px;
             }
 
             .final {
@@ -330,7 +379,7 @@
     <div class="page" id="letter">
         <div class="card">
             <h2>Untuk Cintakuu 🤍</h2>
-            <p id="typing"></p>
+            <div id="typing"></div>
             <button onclick="go('galleryPage')">Next</button>
         </div>
     </div>
@@ -413,17 +462,17 @@ Untuk Ayangg, Andrea Nadine Thea Melinda 💖
 
 Selamat ulang tahun yang ke-20, Ayangg.
 
-Hari ini adalah hari yang sangat spesial karena hari ini adalah hari lahir seseorang putri kecil yang begitu berarti dalam hidupku. Seseorang yang selama dua tahun terakhir telah mengisi hari-hariku d[...]
+Hari ini adalah hari yang sangat spesial karena hari ini adalah hari lahir seseorang putri kecil yang begitu berarti dalam hidupku. Seseorang yang selama dua tahun terakhir telah mengisi hari-hariku dengan warna dan tawa yang tidak akan pernah aku lupakan.
 
-Di hari ulang tahunmu ini, aku ingin mengucapkan terima kasih untuk semua hal yang sudah kamu berikan kepadaku. Terima kasih karena telah hadir dalam hidupku. Terima kasih karena telah menjadi te[...]
+Di hari ulang tahunmu ini, aku ingin mengucapkan terima kasih untuk semua hal yang sudah kamu berikan kepadaku. Terima kasih karena telah hadir dalam hidupku. Terima kasih karena telah menjadi seseorang yang selalu membuat hari-hariku lebih bermakna.
 
-Aku bersyukur kepada Tuhan karena telah mempertemukanku denganmu. Dari sekian banyak orang di dunia ini, aku merasa beruntung karena bisa mengenalmu, mencintaimu, dan berjalan bersamamu hingga sa[...]
+Aku bersyukur kepada Tuhan karena telah mempertemukanku denganmu. Dari sekian banyak orang di dunia ini, aku merasa beruntung karena bisa mengenalmu, mencintaimu, dan berjalan bersamamu hingga saat ini.
 
-Ayangg, aku berharap di usia yang baru ini kamu selalu diberikan kesehatan, kebahagiaan, kekuatan, dan keberhasilan dalam setiap langkah yang kamu ambil. Semoga semua impian, harapan, dan cita-ci[...]
+Ayangg, aku berharap di usia yang baru ini kamu selalu diberikan kesehatan, kebahagiaan, kekuatan, dan keberhasilan dalam setiap langkah yang kamu ambil. Semoga semua impian, harapan, dan cita-citamu menjadi kenyataan.
 
-Aku juga ingin kamu tahu bahwa kehadiranmu sangat berarti bagiku. Senyummu, perhatianmu, cara kamu peduli, dan semua hal kecil yang kamu lakukan sering kali menjadi sesuatu yang membuat hariku le[...]
+Aku juga ingin kamu tahu bahwa kehadiranmu sangat berarti bagiku. Senyummu, perhatianmu, cara kamu peduli, dan semua hal kecil yang kamu lakukan sering kali menjadi sesuatu yang membuat hariku lebih indah.
 
-Terima kasih karena sudah hadir dalam hidupku selama dua tahun terakhir. Aku bersyukur karena dari sekian banyak kemungkinan di dunia ini, aku dipertemukan dengan seseorang sebaik dan seistimewa [...]
+Terima kasih karena sudah hadir dalam hidupku selama dua tahun terakhir. Aku bersyukur karena dari sekian banyak kemungkinan di dunia ini, aku dipertemukan dengan seseorang sebaik dan seistimewa dirimu.
 
 Terima kasih karena sudah bertahan bersamaku selama ini. Terima kasih karena sudah menerima segala kekuranganku. Terima kasih karena tetap memilih untuk berjalan bersamaku hingga hari ini.
 
@@ -441,17 +490,26 @@ Dengan penuh cinta,
 
 Anggut 🤍
 
-Selamat ulang tahun yang ke-20, Cantikuu🎊🎉🥳🥰💞💖.
-`;
+Selamat ulang tahun yang ke-20, Cantikuu🎊🎉🥳🥰💞💖.`;
             
             let i = 0;
             const el = document.getElementById('typing');
             el.innerHTML = '';
             
+            // Hitung total durasi berdasarkan panjang teks
+            const totalDuration = txt.length * 25; // 25ms per karakter
+            
             let t = setInterval(() => {
-                el.innerHTML += txt.charAt(i);
-                i++;
-                if (i >= txt.length) clearInterval(t);
+                if (i < txt.length) {
+                    el.innerHTML = txt.substring(0, i + 1) + '<span class="typing-cursor"></span>';
+                    // Auto scroll ke bawah
+                    const letterCard = document.getElementById('letter').querySelector('.card');
+                    letterCard.scrollTop = letterCard.scrollHeight;
+                    i++;
+                } else {
+                    el.innerHTML = txt + '<span class="typing-cursor"></span>';
+                    clearInterval(t);
+                }
             }, 25);
         }
 
