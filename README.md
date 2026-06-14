@@ -46,11 +46,11 @@
      /* Letter Card - Lebih Besar */
      letter .card {
      width: min(95%, 700px);
-     max-height: 80vh;
+     max-height: auto;
      padding: 40px;
      display: flex;
      flex-direction: column;
-     overflow-y: auto;
+     overflow-y: auto center;
      }
 
         h1 {
@@ -168,10 +168,11 @@
             line-height: 1.9;
             white-space: pre-wrap;
             word-wrap: break-word;
-            text-align: left;
+            text-align: center;
             font-size: clamp(13px, 2vw, 15px);
             flex-grow: 1;
             padding: 10px 0;
+            overflow-y: auto;
             min-height: 100px;
             animation: fadeIn 0.3s ease-in;
         }
@@ -224,6 +225,7 @@
             max-width: 300px;
             margin: 0 auto;
             width: 100%;
+            overflow-y: auto;
         }
 
         .polaroid:hover {
