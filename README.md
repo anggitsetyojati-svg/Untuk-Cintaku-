@@ -42,17 +42,20 @@
             border-radius: 28px;
             width: min(92%, 560px);
             box-shadow: 0 0 40px rgba(255, 105, 180, 0.25);
-        }
-
-        /* Letter Card - Lebih Besar */
-        #letter .card {
-            width: min(95%, 700px);
-            max-height: 80vh;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            overflow-y: auto;
-        }
+      }
+        /*letter-card {
+    width: min(95%, 700px);
+    max-height: 80vh;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    }
+    text-container {
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 5px;
+    }
 
         h1 {
             font-size: clamp(2rem, 5vw, 3.5rem);
