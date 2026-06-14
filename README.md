@@ -497,7 +497,7 @@ Selamat ulang tahun yang ke-20, Cantikuu🎊🎉🥳🥰💞💖.`;
             el.innerHTML = '';
             
             // Hitung total durasi berdasarkan panjang teks
-            const totalDuration = txt.length * 25; // 25ms per karakter
+            const totalDuration = txt.length * 35; // 35ms per karakter
             
             let t = setInterval(() => {
                 if (i < txt.length) {
@@ -510,7 +510,7 @@ Selamat ulang tahun yang ke-20, Cantikuu🎊🎉🥳🥰💞💖.`;
                     el.innerHTML = txt + '<span class="typing-cursor"></span>';
                     clearInterval(t);
                 }
-            }, 25);
+            }, 35);
         }
 
         // Zoom Image Function
