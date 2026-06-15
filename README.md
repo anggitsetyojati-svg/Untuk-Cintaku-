@@ -46,10 +46,10 @@
             box-shadow: 0 0 40px rgba(255, 105, 180, 0.25);
      }
     /* Letter Card - Lebih Besar */
-     letter .card {
+     #letter .card {
      width: min(95%, 700px);
-     margin-top: 40px;
-     max-height: 500px;
+     margin-top: 40dvh;
+     max-height: 85dvh;
      padding: 40px;
      display: flex;
      flex-direction: column;
@@ -90,7 +90,7 @@
 
         input {
             background: rgba(255, 255, 255, 0.1);
-            color: pink;
+            color: putih;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
@@ -172,7 +172,7 @@
             white-space: pre-wrap;
             word-wrap: break-word;
             text-align: center;
-            font-size: clamp(13px, 2vw, 15px);
+            font-size: clamp(13px, 2vw, 16px);
             flex-grow: 1;
             padding: 10px 0;
             overflow-y: auto;
@@ -385,18 +385,18 @@
         <div class="card">
             <h2>Untuk Cintakuu 🤍</h2>
             <div id="typing"></div>
-            <button onclick="go('galleryPage')">Next</button>
+            <button onclick="go('galleryPage')">📸Next</button>
         </div>
     </div>
 
     <!-- Gallery Page -->
     <div class="page" id="galleryPage">
-        <h2 style="margin-bottom:20px">📸 Klik</h2>
+        <h2 style="margin-bottom:20px">📸 potret</h2>
         <div class="gallery">
-            <div class="polaroid" style="--r:-4" onclick="zoom('img1.jpg')"><img src="https://github.com/user-attachments/assets/53115578-52fe-436e-b239-c87c38445181" alt="My Princess"><p>My Princess</p></div>
-            <div class="polaroid" style="--r:3" onclick="zoom('img2.jpg')"><img src="https://github.com/user-attachments/assets/f192e533-5cf9-44b0-8fd7-da8c95395d0d" alt="Our story"><p>Our Story</p></div>
-            <div class="polaroid" style="--r:-2" onclick="zoom('img3.jpg')"><img src="https://github.com/user-attachments/assets/b4066981-6ec4-4372-94b6-6848dcf6fa71" alt="My Beautiful"><p>My Beautiful</p></div>
-            <div class="polaroid" style="--r:5" onclick="zoom('img4.jpg')"><img src="https://github.com/user-attachments/assets/c6ba5a7c-99c9-46a3-bd01-dfe90b170e08" alt="Sweet Memory"><p>Sweet Memory</p></div>
+            <div class="polaroid" style="--r:-4" onclick="zoom('img1.jpg')"><img width="3072" height="4080" alt="1000345766" src="https://github.com/user-attachments/assets/a7f93707-defb-4cb4-b659-494b809422ca" /><p>My Princess</p></div>
+            <div class="polaroid" style="--r:3" onclick="zoom('img2.jpg')"><img width="900" height="1600" alt="1000486470" src="https://github.com/user-attachments/assets/ef74b71c-b498-42e0-9f06-85eba18fa189" /><p>Our Story</p></div>
+            <div class="polaroid" style="--r:-2" onclick="zoom('img3.jpg')"><img width="3072" height="4080" alt="1000216985" src="https://github.com/user-attachments/assets/5f31cfad-156b-478b-bacc-3df3765f1450" /><p>My Beautiful</p></div>
+            <div class="polaroid" style="--r:5" onclick="zoom('img4.jpg')"><img width="2464" height="3280" alt="1000345774" src="https://github.com/user-attachments/assets/67092db5-e5d8-4dc9-9eac-74bc85ac8c95" /><p>Sweet Memory</p></div>
         </div>
         <br><button style="max-width:300px" onclick="go('videoPage')">🎬 Video Kenangan</button>
     </div>
@@ -461,7 +461,6 @@
 Untuk Ayangg, Andrea Nadine Thea Melinda 💖
 
 Selamat ulang tahun yang ke-20, Ayangg.
-
 Hari ini adalah hari yang sangat spesial karena hari ini adalah hari lahir seseorang putri kecil yang begitu berarti dalam hidupku. Seseorang yang selama dua tahun terakhir telah mengisi hari-hariku dengan warna dan tawa yang tidak akan pernah aku lupakan.
 
 Di hari ulang tahunmu ini, aku ingin mengucapkan terima kasih untuk semua hal yang sudah kamu berikan kepadaku. Terima kasih karena telah hadir dalam hidupku. Terima kasih karena telah menjadi seseorang yang selalu membuat hari-hariku lebih bermakna.
