@@ -48,7 +48,7 @@
     /* Letter Card - Lebih Besar */
      #letter .card {
      width: min(95%, 700px);
-     margin-top: 40dvh;
+     margin-top: 12dvh;
      max-height: 85dvh;
      padding: 40px;
      display: flex;
