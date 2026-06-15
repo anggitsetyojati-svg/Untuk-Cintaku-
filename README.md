@@ -392,10 +392,10 @@
     <div class="page" id="galleryPage">
         <h2 style="margin-bottom:20px">📸 Klik</h2>
         <div class="gallery">
-            <div class="polaroid" style="--r:-4" onclick="zoom('img1.jpg')"><img src="<img width="900" height="1600" alt="1000486470" src="https://github.com/user-attachments/assets/53115578-52fe-436e-b239-c87c38445181"><p>My Princess</p></div>
-            <div class="polaroid" style="--r:3" onclick="zoom('img2.jpg')"><img src="<img width="2464" height="3280" alt="1000345774" src="https://github.com/user-attachments/assets/f192e533-5cf9-44b0-8fd7-da8c95395d0d"><p>Our Story</p></div>
-            <div class="polaroid" style="--r:-2" onclick="zoom('img3.jpg')"><img src="<img width="3072" height="4080" alt="1000216990" src="https://github.com/user-attachments/assets/b4066981-6ec4-4372-94b6-6848dcf6fa71"><p>My Beautiful</p></div>
-            <div class="polaroid" style="--r:5" onclick="zoom('img4.jpg')"><img src="<img width="3072" height="4080" alt="1000345798" src="https://github.com/user-attachments/assets/c6ba5a7c-99c9-46a3-bd01-dfe90b170e08"><p>Sweet Memory</p></div>
+            <div class="polaroid" style="--r:-4" onclick="zoom('img1.jpg')"><img src="https://github.com/user-attachments/assets/53115578-52fe-436e-b239-c87c38445181" alt="My Princess"><p>My Princess</p></div>
+            <div class="polaroid" style="--r:3" onclick="zoom('img2.jpg')"><img src="https://github.com/user-attachments/assets/f192e533-5cf9-44b0-8fd7-da8c95395d0d" alt="Our story"><p>Our Story</p></div>
+            <div class="polaroid" style="--r:-2" onclick="zoom('img3.jpg')"><img src="https://github.com/user-attachments/assets/b4066981-6ec4-4372-94b6-6848dcf6fa71" alt="My Beautiful"><p>My Beautiful</p></div>
+            <div class="polaroid" style="--r:5" onclick="zoom('img4.jpg')"><img src="https://github.com/user-attachments/assets/c6ba5a7c-99c9-46a3-bd01-dfe90b170e08" alt="Sweet Memory"><p>Sweet Memory</p></div>
         </div>
         <br><button style="max-width:300px" onclick="go('videoPage')">🎬 Video Kenangan</button>
     </div>
@@ -447,7 +447,7 @@
             if ((n.includes('andrea') || n.includes('nadine')) && p === '161223') {
                 go('envelope');
             } else {
-                document.getElementById('msg').innerText = 'Nama anda atau Pin salah';
+                document.getElementById('msg').innerText = 'Nama anda atau Pin "kita" salah';
             }
         }
 
@@ -581,8 +581,9 @@ Selamat ulang tahun yang ke-20, Cantikuu🎊🎉🥳🥰💞💖.
                 { x: window.innerWidth * 0.2, y: window.innerHeight * 0.3 },
                 { x: window.innerWidth * 0.5, y: window.innerHeight * 0.2 },
                 { x: window.innerWidth * 0.8, y: window.innerHeight * 0.3 },
-                { x: window.innerWidth * 0.3, y: window.innerHeight * 0.5 },
+                { x: window.innerWidth * 0.3, y: window.innerHeight * 0.4 },
                 { x: window.innerWidth * 0.7, y: window.innerHeight * 0.5 }
+                { x: window.innerWidth * 0.9, y: window.innerHeight * 0.7 }
             ];
 
             // Launch fireworks in sequence
