@@ -40,6 +40,7 @@
             backdrop-filter: blur(18px);
             border: 1px solid rgba(255, 255, 255, 0.15);
             padding: 30px;
+            max-height: 200px;
             border-radius: 28px;
             width: min(92%, 560px);
             box-shadow: 0 0 40px rgba(255, 105, 180, 0.25);
