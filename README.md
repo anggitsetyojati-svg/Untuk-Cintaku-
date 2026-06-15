@@ -583,7 +583,7 @@ Selamat ulang tahun yang ke-20, Cantikuu🎊🎉🥳🥰💞💖.
                 { x: window.innerWidth * 0.5, y: window.innerHeight * 0.2 },
                 { x: window.innerWidth * 0.8, y: window.innerHeight * 0.3 },
                 { x: window.innerWidth * 0.3, y: window.innerHeight * 0.4 },
-                { x: window.innerWidth * 0.7, y: window.innerHeight * 0.5 }
+                { x: window.innerWidth * 0.7, y: window.innerHeight * 0.5 },
                 { x: window.innerWidth * 0.9, y: window.innerHeight * 0.7 }
             ];
 
